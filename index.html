@@ -156,7 +156,7 @@ footer .logo{font-size:16px;margin-bottom:10px}
 
     <div class="optin" id="optin">
       <div class="kit-label">Send me the free starter kit</div>
-      <form id="kitForm" action="https://app.kit.com/forms/9493607/subscriptions" method="post">
+      <form id="kitForm" action="https://app.kit.com/forms/10225715/subscriptions" method="post">
         <input type="email" name="email_address" placeholder="Your best email address" required aria-label="Email address">
         <button class="btn" type="submit">Get Free Access <span class="arr">→</span></button>
       </form>
@@ -298,8 +298,8 @@ document.getElementById('kitForm').addEventListener('submit',async function(e){
   try{
     const r=await fetch(this.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(this)});
     if(r.ok){
-      msg.className='msg ok';msg.textContent='✓ You\'re in! Check your inbox — redirecting you now…';
-      setTimeout(()=>{window.location.href='sales.html'},1800);
+      msg.className='msg ok';msg.textContent='✓ Almost there! Check your inbox and tap Confirm — your free training opens right after.';
+      btn.textContent='Check your inbox ✓';
     }else{throw new Error()}
   }catch(err){
     msg.className='msg err';msg.textContent='Something went wrong — please try again.';
