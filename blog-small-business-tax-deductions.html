@@ -35,7 +35,11 @@ li{margin-bottom:10px}
 table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:15px}
 th{text-align:left;color:var(--gold2);font-weight:700;padding:10px 12px;border-bottom:1px solid var(--line)}
 td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.07);vertical-align:top}
-td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
+td:first-child{color:var(--ink);font-weight:600;width:140px}
+td:last-child{font-size:13px;width:130px}
+th:nth-child(2),td:nth-child(2){width:110px}
+article{max-width:860px}
+@media(max-width:640px){table{font-size:13.5px;display:block;overflow-x:auto}td:first-child{white-space:normal}}
 footer{border-top:1px solid rgba(255,255,255,.06);padding:32px 24px;text-align:center;font-size:12.5px;color:var(--muted)}
 </style>
 </head>
@@ -52,18 +56,25 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:32px 24px;text-align:c
 
 <h2>The deduction list</h2>
 <table>
-<tr><th>Deduction</th><th>% deductible</th><th>Cap / rule to know</th></tr>
-<tr><td>Home office</td><td>100% of the calc</td><td>Simplified method: $5/sq ft up to 300 sq ft ($1,500 max). Regular method: business-use % of actual home costs, no set cap. Space must be used regularly and exclusively for business.</td></tr>
-<tr><td>Vehicle & mileage</td><td>100% of business miles</td><td>IRS standard mileage rate per business mile. Commuting never counts. Keep a mileage log — no log, no deduction.</td></tr>
-<tr><td>Phone & internet</td><td>Business-use % only</td><td>Estimate honestly and consistently (e.g., 60% business use = 60% of the bill).</td></tr>
-<tr><td>Software & AI tools</td><td>100%</td><td>Storefront, email platform, AI subscriptions, design tools — no set cap when used for business.</td></tr>
-<tr><td>Business travel</td><td>100%</td><td>Flights, lodging, ground transport when the trip is primarily business.</td></tr>
-<tr><td>Business meals</td><td>Generally 50%</td><td>Meals with clients, vendors, or partners while discussing business. Save the receipt, note who and why.</td></tr>
-<tr><td>Education</td><td>100%</td><td>Courses, books, coaching that improve skills in your <em>current</em> business (not to qualify for a new profession).</td></tr>
-<tr><td>Marketing & ads</td><td>100%</td><td>Website, ads, branding, content creation — no set cap.</td></tr>
-<tr><td>Business insurance</td><td>100%</td><td>Premiums for business liability and similar policies.</td></tr>
-<tr><td>Startup costs</td><td>Up to $5,000 in year one</td><td>Phases out dollar-for-dollar above $50K total startup costs; the remainder amortizes over 15 years.</td></tr>
+<tr><th>Deduction</th><th>% deductible</th><th>Cap / rule to know</th><th>Look it up</th></tr>
+<tr><td>Home office</td><td>Business-use % (or simplified)</td><td>Regular method: the business-use percentage of your home (office sq ft ÷ home sq ft) applied to rent, or to mortgage <em>interest</em>, real estate taxes, utilities, insurance, repairs and depreciation, with no fixed dollar cap (the deduction can be limited if your business income is lower than your expenses). Simplified method: $5/sq ft up to 300 sq ft ($1,500 max). Either way, the space must be used regularly and exclusively for business. W-2 employees can't claim it.</td><td><a href="https://www.irs.gov/publications/p587">IRS Pub 587</a>; <a href="https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction">IRS simplified option</a>; Schedule C Line 30</td></tr>
+<tr><td>Vehicle & mileage</td><td>Business miles only</td><td>IRS standard mileage rate for 2026: 72.5¢/mile (Jan 1–Jun 30) and 76¢/mile (Jul 1–Dec 31). Commuting between home and your main place of work is not deductible. Keep a written record of each business trip.</td><td><a href="https://www.irs.gov/tax-professionals/standard-mileage-rates">IRS standard mileage rates</a>; <a href="https://www.irs.gov/publications/p463">IRS Pub 463</a></td></tr>
+<tr><td>Phone & internet</td><td>Business-use % only</td><td>The IRS rule for mixed-use costs: separate the personal part from the business part, and only the business part is deductible (e.g., 60% business use = 60% of the bill). Keep a note of how you figured the split.</td><td><a href="https://www.irs.gov/publications/p334">IRS Pub 334</a>, Ch. 8</td></tr>
+<tr><td>Software & AI tools</td><td>Business-use %</td><td>Ordinary and necessary subscriptions (storefront, email platform, AI tools, design apps) are business expenses. Personal use isn't deductible. Purchased off-the-shelf software is generally depreciated over 36 months, or may qualify for the Section 179 deduction.</td><td><a href="https://www.irs.gov/publications/p334">IRS Pub 334</a>; <a href="https://www.irs.gov/publications/p946">IRS Pub 946</a></td></tr>
+<tr><td>Business travel</td><td>Business portion</td><td>Transportation and lodging when you travel away from your tax home primarily for business. Meals on the trip fall under the 50% meal limit. Days spent on personal activities aren't deductible.</td><td><a href="https://www.irs.gov/publications/p463">IRS Pub 463</a></td></tr>
+<tr><td>Business meals</td><td>Generally 50%</td><td>Taxes and tips are part of the meal cost and fall under the same 50% limit. Meals can't be lavish or extravagant. Save the receipt and note who and why. Goes on Schedule C Line 24b.</td><td><a href="https://www.irs.gov/publications/p463">IRS Pub 463</a></td></tr>
+<tr><td>Education</td><td>Qualifying costs</td><td>Courses, books and coaching that maintain or improve skills needed in your <em>present</em> work, not education that qualifies you for a new trade or business. If you're self-employed, it comes straight off your self-employment income.</td><td><a href="https://www.irs.gov/newsroom/tax-benefits-for-education-information-center">IRS education benefits</a></td></tr>
+<tr><td>Marketing & ads</td><td>Ordinary & necessary</td><td>Website, ads, branding, content creation. Goes on Schedule C Line 8, "Advertising."</td><td><a href="https://www.irs.gov/pub/irs-pdf/f1040sc.pdf">Schedule C (Form 1040)</a></td></tr>
+<tr><td>Business insurance</td><td>Business policies</td><td>Premiums for insurance related to your business (fire, theft, flood, liability and similar). Schedule C Line 15, "Insurance (other than health)."</td><td><a href="https://www.irs.gov/publications/p334">IRS Pub 334</a></td></tr>
+<tr><td>Equipment & furniture</td><td>Up to 100% in year one</td><td>Section 179 lets you deduct qualifying equipment (new or used) in the year you put it in service, up to $2,560,000 for 2026. That limit shrinks once purchases pass $4,090,000. SUVs are capped at $32,000. 100% bonus depreciation is back permanently for qualifying property acquired after Jan. 19, 2025. Small items: the de minimis safe harbor lets you deduct tangible property up to $2,500 per item or invoice.</td><td><a href="https://www.irs.gov/publications/p946">IRS Pub 946</a>; <a href="https://www.irs.gov/businesses/small-businesses-self-employed/tangible-property-final-regulations">IRS de minimis safe harbor</a></td></tr>
+<tr><td>Business gifts</td><td>$25 per person</td><td>You can deduct no more than $25 per recipient per year. Engraving, packing and shipping don't count toward the $25. Branded items costing $4 or less that you hand out widely don't count either.</td><td><a href="https://www.irs.gov/faqs/small-business-self-employed/income-expenses/income-expenses-8">IRS FAQ: gifts</a>; <a href="https://www.irs.gov/publications/p463">IRS Pub 463</a></td></tr>
+<tr><td>Entertainment</td><td>0%</td><td>Concerts, games, golf and other entertainment aren't deductible, even with a client. If something could count as either a gift or entertainment, it's generally treated as entertainment. (Business meals are separate. See the 50% rule above.)</td><td><a href="https://www.irs.gov/publications/p463">IRS Pub 463</a></td></tr>
+<tr><td>Self-employed health insurance</td><td>Premiums you pay</td><td>Medical, dental, vision and qualified long-term care premiums for you, your spouse and your dependents. Figured on Form 7206 and taken on Schedule 1 (Form 1040), line 17, not on Schedule C. There are eligibility limits.</td><td><a href="https://www.irs.gov/instructions/i7206">IRS Form 7206 instructions</a></td></tr>
+<tr><td>Retirement (SEP-IRA)</td><td>Up to 25% of pay</td><td>Contributions can't exceed the lesser of 25% of compensation or $72,000 for 2026. For yourself as a sole proprietor, the 25% works out to about 20% of net self-employment earnings. A solo 401(k) allows employee deferrals up to $24,500 for 2026.</td><td><a href="https://www.irs.gov/retirement-plans/plan-participant-employee/sep-contribution-limits-including-grandfathered-sarseps">IRS SEP limits</a>; <a href="https://www.irs.gov/publications/p560">IRS Pub 560</a></td></tr>
+<tr><td>Half of SE tax</td><td>50%</td><td>Self-employed people pay 15.3% self-employment tax, and the employer-equivalent half of it is deductible when figuring adjusted gross income.</td><td><a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes">IRS self-employment tax</a></td></tr>
+<tr><td>Startup costs</td><td>Up to $5,000 in year one</td><td>The $5,000 drops dollar-for-dollar once total startup costs pass $50,000. Whatever you can't deduct right away is spread over 180 months (15 years).</td><td><a href="https://www.law.cornell.edu/uscode/text/26/195">26 U.S.C. §195</a></td></tr>
 </table>
+<p class="note">Every figure on this page was checked against the source in the "Look it up" column on Nov 25, 2026. Rates (like the mileage rate) change. Click through to confirm the current year.</p>
 
 <h2>The rule that makes all of this real</h2>
 <p><strong>A deduction you can't document is a deduction you lose.</strong> Three habits cover you:</p>
@@ -77,7 +88,7 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:32px 24px;text-align:c
 <p>These deductions belong to businesses — not hobbies. That means registering a real entity, getting your free EIN from the IRS (ten minutes at irs.gov), and running the money separately. That structure is also what unlocks <a href="blog-business-credit-ein.html">business credit under your EIN</a> — the second half of the rulebook most people never learn.</p>
 
 <div class="cta">
-<p><strong>Get the cheat sheet version free.</strong> The Wealth Starter Kit includes this deduction list as a printable cheat sheet, the Business Quick Start Checklist, 10 modern business ideas under $250, the AI Money Funnel Playbook, and the 7-Day Wealth Sprint. Free.</p>
+<p><strong>Get the cheat sheet version free.</strong> The free AI Business Starter Kit includes this deduction list as a printable Tax Deduction Cheat Sheet, plus the Business Quick Start Checklist, 10 Modern Businesses Under $500, The AI Automation Playbook, The 7-Day Launch Sprint and The 4 Moves of the Wealthy.</p>
 <a class="btn" href="index.html">Get the Free Starter Kit →</a>
 </div>
 
@@ -85,11 +96,11 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:32px 24px;text-align:c
 <h3>Do I need an LLC to take these deductions?</h3>
 <p>Business deductions attach to genuine business activity — sole proprietors can take them too. An entity like an LLC adds liability protection and structure, and makes the separation (banking, credit, records) much cleaner.</p>
 <h3>Can I deduct expenses from before my business officially started?</h3>
-<p>That's the startup-cost deduction: up to $5,000 of qualifying pre-launch costs in year one, with the remainder amortized. Keep those early receipts.</p>
+<p>That's the startup-cost deduction: up to $5,000 of qualifying pre-launch costs in year one, with the remainder spread over 180 months (<a href="https://www.law.cornell.edu/uscode/text/26/195">26 U.S.C. §195</a>). Keep those early receipts.</p>
 <h3>What if I use something for both personal and business?</h3>
-<p>Deduct the business-use percentage — the honest split, applied consistently. Phone, internet, vehicle, and home office all work this way.</p>
+<p>Deduct the business-use percentage — the honest split, applied consistently. The IRS says to separate the personal part from the business part; the personal part generally isn't deductible (<a href="https://www.irs.gov/publications/p334">IRS Pub 334</a>). Phone, internet, vehicle, and home office all work this way.</p>
 <h3>When do quarterly estimated taxes start?</h3>
-<p>Generally once you expect to owe $1,000+ in tax for the year from business income. Set aside a percentage of every payment you receive so the quarterly bill is never a surprise.</p>
+<p>Sole proprietors and other individuals generally have to make estimated tax payments if they expect to owe $1,000 or more when they file (<a href="https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes">IRS: Estimated taxes</a>). Estimated tax covers self-employment tax too, not just income tax. Set aside part of every payment you receive so the quarterly bill is never a surprise.</p>
 
 <p class="note">Educational purposes only — not legal, tax, or financial advice. Rates, caps, and rules change; confirm current-year specifics with your tax professional.</p>
 </article>

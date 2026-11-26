@@ -127,6 +127,12 @@ nav{position:sticky;top:0;z-index:50;background:rgba(11,13,16,.82);backdrop-filt
 .cred{font-size:12.5px;font-weight:700;letter-spacing:.06em;color:var(--gold2);border:1px solid var(--line);border-radius:999px;padding:8px 16px;background:rgba(212,175,55,.05)}
 
 /* WHO */
+.voices .vgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:960px;margin:0 auto}
+.voices .vcard{background:var(--bg2);border:1px solid rgba(212,175,55,.22);border-radius:18px;padding:30px 28px;margin:0}
+.voices blockquote{color:var(--ink);font-size:18px;line-height:1.6;margin:0 0 16px}
+.voices figcaption{color:var(--gold);font-size:14px;font-weight:700}
+.voices .vnote{text-align:center;color:var(--muted2);font-size:13px;max-width:720px;margin:26px auto 0}
+@media(max-width:760px){.voices .vgrid{grid-template-columns:1fr}}
 .who{background:var(--bg2)}
 .personas{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
 .persona{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:30px 26px}
@@ -364,6 +370,28 @@ footer .logo{font-size:16px;margin-bottom:10px}
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- EARLY FEEDBACK -->
+<section class="voices">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Early feedback</span>
+      <h2>What the First People to See It <span class="gold">Texted Me</span></h2>
+      <p>Before launch, I shared the course with people I know personally. These are their words from those texts (shared with their permission), trimmed for length and language.</p>
+    </div>
+    <div class="vgrid">
+      <figure class="vcard reveal">
+        <blockquote>“Just finished listening to all the videos! They were great! Simple and easy to understand, good tone and pacing! … Learned some stuff too! Need to register my duns number.”</blockquote>
+        <figcaption>Brenda N., a close friend, after finishing all the course videos</figcaption>
+      </figure>
+      <figure class="vcard reveal">
+        <blockquote>“This looks so… good!!! You set the framework up so well and expectations for what's to come in the course!!! I love it!!!!”</blockquote>
+        <figcaption>Emily R., my sister, after a first look at the course</figcaption>
+      </figure>
+    </div>
+    <p class="vnote reveal">Shared by people I know personally, so they aren't independent reviews. Individual experiences; no specific results are promised or typical.</p>
   </div>
 </section>
 
